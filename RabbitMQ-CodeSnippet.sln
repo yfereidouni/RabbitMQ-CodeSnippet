@@ -3,45 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.HelloWorld", "01.HelloWorld", "{20AA8B40-3A5A-4479-8A88-252BD1A6721F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. HelloWorld", "01. HelloWorld", "{20AA8B40-3A5A-4479-8A88-252BD1A6721F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.LoadBalancing", "02.LoadBalancing", "{4E4E2F5C-79D9-4D61-BFE1-B3914F1EB664}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. LoadBalancing", "02. LoadBalancing", "{4E4E2F5C-79D9-4D61-BFE1-B3914F1EB664}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.LoadBalancing.Receiver", "02.LoadBalancing\RabbitMQ-CodeSnippe.LoadBalancing.Receiver\RabbitMQ-CodeSnippe.LoadBalancing.Receiver.csproj", "{A02A3021-F806-45BB-9EE7-D35AE584357D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.LoadBalancing.Receiver", "02. LoadBalancing\RabbitMQ-CodeSnippe.LoadBalancing.Receiver\RabbitMQ-CodeSnippe.LoadBalancing.Receiver.csproj", "{A02A3021-F806-45BB-9EE7-D35AE584357D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.LoadBalancing.Sender", "02.LoadBalancing\RabbitMQ-CodeSnippe.LoadBalancing.Sender\RabbitMQ-CodeSnippe.LoadBalancing.Sender.csproj", "{8594F702-8727-4218-B827-7F60D668BAC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.LoadBalancing.Sender", "02. LoadBalancing\RabbitMQ-CodeSnippe.LoadBalancing.Sender\RabbitMQ-CodeSnippe.LoadBalancing.Sender.csproj", "{8594F702-8727-4218-B827-7F60D668BAC4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippet.HelloWorld.Receiver", "01.HelloWorld\RabbitMQ-CodeSnippet.HelloWorld.Receiver\RabbitMQ-CodeSnippet.HelloWorld.Receiver.csproj", "{C0758D8F-8CAB-466F-86D9-ABD83C72E3C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippet.HelloWorld.Receiver", "01. HelloWorld\RabbitMQ-CodeSnippet.HelloWorld.Receiver\RabbitMQ-CodeSnippet.HelloWorld.Receiver.csproj", "{C0758D8F-8CAB-466F-86D9-ABD83C72E3C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippet.HelloWorld.Sender", "01.HelloWorld\RabbitMQ-CodeSnippet.HelloWorld.Sender\RabbitMQ-CodeSnippet.HelloWorld.Sender.csproj", "{607A0FC2-709C-4B23-B864-27FE1AF1BF52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippet.HelloWorld.Sender", "01. HelloWorld\RabbitMQ-CodeSnippet.HelloWorld.Sender\RabbitMQ-CodeSnippet.HelloWorld.Sender.csproj", "{607A0FC2-709C-4B23-B864-27FE1AF1BF52}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.PubSub", "03.PubSub", "{9E709CDC-FF5F-44EC-BB66-2CEE794EA6B0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. PubSub", "03. PubSub", "{9E709CDC-FF5F-44EC-BB66-2CEE794EA6B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.PubSub.Sender", "03.PubSub\RabbitMQ-CodeSnippe.PubSub.Sender\RabbitMQ-CodeSnippe.PubSub.Sender.csproj", "{6FAD070C-0F00-4F45-AC53-D4B0D6D9DEE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.PubSub.Sender", "03. PubSub\RabbitMQ-CodeSnippe.PubSub.Sender\RabbitMQ-CodeSnippe.PubSub.Sender.csproj", "{6FAD070C-0F00-4F45-AC53-D4B0D6D9DEE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.PubSub.ConsoleReceiver", "03.PubSub\RabbitMQ-CodeSnippe.PubSub.Receiver\RabbitMQ-CodeSnippe.PubSub.ConsoleReceiver.csproj", "{003ECF1C-BB6F-40FC-9312-D6E02ECF1152}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.PubSub.ConsoleReceiver", "03. PubSub\RabbitMQ-CodeSnippe.PubSub.Receiver\RabbitMQ-CodeSnippe.PubSub.ConsoleReceiver.csproj", "{003ECF1C-BB6F-40FC-9312-D6E02ECF1152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.PubSub.EmailReceiver", "03.PubSub\RabbitMQ-CodeSnippe.PubSub.EmailReceiver\RabbitMQ-CodeSnippe.PubSub.EmailReceiver.csproj", "{989DA747-929E-4B56-A5D4-75203FA45AF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.PubSub.EmailReceiver", "03. PubSub\RabbitMQ-CodeSnippe.PubSub.EmailReceiver\RabbitMQ-CodeSnippe.PubSub.EmailReceiver.csproj", "{989DA747-929E-4B56-A5D4-75203FA45AF7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.DirectRouting", "04.DirectRouting", "{CA5C8950-86A6-4930-89AE-F49C639CA53E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. DirectRouting", "04. DirectRouting", "{CA5C8950-86A6-4930-89AE-F49C639CA53E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.DirectRouting.ConsoleReceiver", "04.DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.ConsoleReceiver\RabbitMQ-CodeSnippe.DirectRouting.ConsoleReceiver.csproj", "{EA8E746A-20ED-44F8-98C0-B6813CC15F72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.DirectRouting.ConsoleReceiver", "04. DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.ConsoleReceiver\RabbitMQ-CodeSnippe.DirectRouting.ConsoleReceiver.csproj", "{EA8E746A-20ED-44F8-98C0-B6813CC15F72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.DirectRouting.EmailReceiver", "04.DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.EmailReceiver\RabbitMQ-CodeSnippe.DirectRouting.EmailReceiver.csproj", "{FE031EF0-2A1B-4D4D-9355-96A7D7AE0CB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.DirectRouting.EmailReceiver", "04. DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.EmailReceiver\RabbitMQ-CodeSnippe.DirectRouting.EmailReceiver.csproj", "{FE031EF0-2A1B-4D4D-9355-96A7D7AE0CB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.DirectRouting.Logger", "04.DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.Logger\RabbitMQ-CodeSnippe.DirectRouting.Logger.csproj", "{6136FCCB-0A8F-49A6-B282-6712DA1A5EA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.DirectRouting.Logger", "04. DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.Logger\RabbitMQ-CodeSnippe.DirectRouting.Logger.csproj", "{6136FCCB-0A8F-49A6-B282-6712DA1A5EA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.DirectRouting.Sender", "04.DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.Sender\RabbitMQ-CodeSnippe.DirectRouting.Sender.csproj", "{BCE5C385-9316-479F-9F95-E7CC909D4639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.DirectRouting.Sender", "04. DirectRouting\RabbitMQ-CodeSnippe.DirectRouting.Sender\RabbitMQ-CodeSnippe.DirectRouting.Sender.csproj", "{BCE5C385-9316-479F-9F95-E7CC909D4639}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.TopicRouting", "05.TopicRouting", "{5F1D9A2D-A492-429D-9B9D-C76582B21677}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. TopicRouting", "05. TopicRouting", "{5F1D9A2D-A492-429D-9B9D-C76582B21677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.TopicRouting.ConsoleReceiver", "05.TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.ConsoleReceiver\RabbitMQ-CodeSnippe.TopicRouting.ConsoleReceiver.csproj", "{17292E3F-D7FD-40CF-80BA-B2C3EBB6AFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.TopicRouting.ConsoleReceiver", "05.TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.ConsoleReceiver\RabbitMQ-CodeSnippe.TopicRouting.ConsoleReceiver.csproj", "{17292E3F-D7FD-40CF-80BA-B2C3EBB6AFD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.TopicRouting.EmailReceiver", "05.TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.EmailReceiver\RabbitMQ-CodeSnippe.TopicRouting.EmailReceiver.csproj", "{209B7439-692A-4F4C-85C5-DB6B3EA11840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.TopicRouting.EmailReceiver", "05.TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.EmailReceiver\RabbitMQ-CodeSnippe.TopicRouting.EmailReceiver.csproj", "{209B7439-692A-4F4C-85C5-DB6B3EA11840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.TopicRouting.Logger", "05.TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.Logger\RabbitMQ-CodeSnippe.TopicRouting.Logger.csproj", "{248370C9-8E6A-42E7-BBEE-C5970D14F023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.TopicRouting.Logger", "05. TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.Logger\RabbitMQ-CodeSnippe.TopicRouting.Logger.csproj", "{248370C9-8E6A-42E7-BBEE-C5970D14F023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ-CodeSnippe.TopicRouting.Sender", "05.TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.Sender\RabbitMQ-CodeSnippe.TopicRouting.Sender.csproj", "{996D1B5E-C1C7-4EF8-8686-F88D69BB80DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ-CodeSnippe.TopicRouting.Sender", "05. TopicRouting\RabbitMQ-CodeSnippe.TopicRouting.Sender\RabbitMQ-CodeSnippe.TopicRouting.Sender.csproj", "{996D1B5E-C1C7-4EF8-8686-F88D69BB80DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. RabbitMQ.MassTransit", "06. RabbitMQ.MassTransit", "{E36EF610-429C-4E19-87DB-C2E8A254FB82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
