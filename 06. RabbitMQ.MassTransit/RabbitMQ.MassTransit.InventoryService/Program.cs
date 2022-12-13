@@ -1,10 +1,8 @@
 using InventoryService;
 using MassTransit;
+using RabbitMQ.MassTransit.InventoryService;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 
 ///Our Receiver -------------------------------------
 ///Configuring MassTransit-RabbitMQ -----------------
@@ -14,24 +12,16 @@ builder.Services.AddMassTransit(x =>
 
     x.UsingRabbitMq((context, cfg) =>
     {
-        //cfg.Host("localhost", "/", h =>
-        //{
-        //    h.Username("guest");
-        //    h.Password("guest");
-        //});
-
-        var uri = new Uri(builder.Configuration.GetSection("ServiceBus:Uri").Value);
-        cfg.Host(uri, host =>
+        cfg.Host("localhost", "/", h =>
         {
-            host.Username(builder.Configuration.GetSection("ServiceBus:Username").Value);
-            host.Password(builder.Configuration.GetSection("ServiceBus:Password").Value);
+            h.Username("guest");
+            h.Password("guest");
         });
 
         ///Exchange:
         cfg.ReceiveEndpoint(builder.Configuration.GetSection("ServiceBus:Queue").Value, c =>
         {
             c.ConfigureConsumer<OrderConsumer>(context);
-            //c.configureconsumetopology = false;
         });
 
         cfg.ConfigureEndpoints(context);
@@ -42,7 +32,6 @@ builder.Services.AddMassTransit(x =>
 
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

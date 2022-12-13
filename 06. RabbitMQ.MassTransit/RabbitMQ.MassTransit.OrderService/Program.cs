@@ -1,4 +1,6 @@
+using InventoryService;
 using MassTransit;
+using RabbitMQ.MassTransit.InventoryService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +16,7 @@ builder.Services.AddSwaggerGen();
 ///Configuring MassTransit-RabbitMQ -----------------
 builder.Services.AddMassTransit(x =>
 {
-    //x.AddConsumer<MessageConsumer>();
-
+    x.AddConsumer<OrderConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host("localhost", "/", h =>
@@ -24,16 +25,19 @@ builder.Services.AddMassTransit(x =>
             h.Password("guest");
         });
 
+        #region old
         //var uri = new Uri(builder.Configuration.GetSection("ServiceBus:Uri").Value);
         //cfg.Host(uri, host =>
         //{
         //    host.Username(builder.Configuration.GetSection("ServiceBus:Username").Value);
         //    host.Password(builder.Configuration.GetSection("ServiceBus:Password").Value);
         //});
+        #endregion
 
         cfg.ConfigureEndpoints(context);
     });
 });
+//Very Important!
 //builder.Services.AddHostedService<Worker>();
 ///--------------------------------------------------
 

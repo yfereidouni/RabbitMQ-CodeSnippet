@@ -11,7 +11,8 @@ public class OrderConsumer : IConsumer<Order>
 
         // TO DO : save order to database and ....
 
-        await Console.Out.WriteLineAsync(msg.Details);
+        Console.WriteLine(msg.Details);
+        await Task.Delay(5000);
     }
 }
  
